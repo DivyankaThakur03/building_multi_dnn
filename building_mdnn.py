@@ -126,7 +126,7 @@ def main(args):
 
     nvvidconv1 = Gst.ElementFactory.make("nvvideoconvert", "convertor1")
     if not nvvidconv1:
-        sys.stderr.write(" Unable to create nvvidconv \n")
+        sys.stderr.write(" Unable to create nvvidconv1 \n")
 
     nvosd = Gst.ElementFactory.make("nvdsosd", "onscreendisplay")
 
@@ -135,7 +135,7 @@ def main(args):
 
     nvvidconv2 = Gst.ElementFactory.make("nvvideoconvert", "convertor2")
     if not nvvidconv2:
-        sys.stderr.write(" Unable to create nvvidconv \n")
+        sys.stderr.write(" Unable to create nvvidconv2 \n")
 
     print("Creating EGLSink \n")
     sink = Gst.ElementFactory.make("nveglglessink", "nvvideo-renderer")
