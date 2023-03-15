@@ -22,7 +22,7 @@ Install the project
 To deploy this project run
 
 ```bash
-  python3 sample_30.mp4
+  python3 building_mdnn.py
 ```
 
 
